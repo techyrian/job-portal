@@ -398,7 +398,7 @@ font-size: 2.5rem;
     url('images/chessode.jpg');
     background-size: cover;
     position: relative;
-    color: #fff;
+    color: #ffffff;
 }
 
 .services__card:nth-child(2) {
@@ -423,9 +423,10 @@ font-size: 2.5rem;
 }
 
 .services__card p:nth-of-type(2) {
-    position: absolute;
+    position: relative;
     top: 430px;
     left: 30px;
+    width: 90%;
 }
 
 .services__card button {
@@ -458,3 +459,20 @@ font-size: 2.5rem;
         margin-top: 12rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .services {
+        height: 1400px;
+    }
+
+    .services h1 {
+        font-size: 1.2rem;
+    }
+
+    .services_card {
+        width: 300px;
+    }
+}
+
+/* Footer CSS */
+
