@@ -418,13 +418,13 @@ font-size: 2.5rem;
 
 .services__card p:first-of-type {
     position: absolute;
-    top: 400px;
+    top: 385px;
     left: 30px;
 }
 
 .services__card p:nth-of-type(2) {
     position: relative;
-    top: 430px;
+    top: 435px;
     left: 30px;
     width: 90%;
 }
