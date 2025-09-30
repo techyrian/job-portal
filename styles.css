@@ -401,6 +401,24 @@ font-size: 2.5rem;
     color: #ffffff;
 }
 
+#job-card {
+    background-image: linear-gradient(
+        to bottom, 
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(17, 17, 17, 0.6) 100%
+    ), 
+    url('images/thumbups.jpg')
+}
+
+#job-class {
+    background-image: linear-gradient(
+        to bottom, 
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(17, 17, 17, 0.6) 100%
+    ), 
+    url('images/techcode.jpg')
+}
+
 .services__card:nth-child(2) {
     background-image: linear-gradient(
         to bottom, 
