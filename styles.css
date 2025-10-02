@@ -227,8 +227,6 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    width: 1100px;
-    text-align: center;
 }
 
 .main__content h2 {
@@ -240,8 +238,6 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    width: 1100px;
-    text-align: center;
 } 
 
  .main__content p {
@@ -249,8 +245,6 @@
     font-size: 2rem;
     font-weight: 700; 
     color: #fff;
-    width: 1100px;
-    text-align: center;
 }
 
 
