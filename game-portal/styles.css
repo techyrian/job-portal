@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background: linear-gradient(blue, teal);
+    background: linear-gradient(rgb(128, 255, 196), rgba(63, 5, 108, 0.847));
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,8 +29,8 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #000000 0%, #ffffff 100%);
+    background-color: #000000;
+    background-image: linear-gradient(to top, #000000);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -78,6 +78,7 @@
 
 .button {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -87,18 +88,18 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
-    color: #ffffff;
+    background: #580369;
+    color: #757474;
 }
 
 .button:hover {
-    background: #4837ff;
+    background: #45e6ffba;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #f77062;
-    transition: all 0.es ease;
+    color: #720685ca;
+    transition: all 0s ease;
 }
 
 @media screen and (max-width: 960px) {
@@ -200,7 +201,7 @@
 
 /* Hero Section CSS */
 .main {
-    background: linear-gradient(teal, blue);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
 
@@ -211,7 +212,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background: linear-gradient(rgb(68, 131, 240), rgb(0, 170, 255));
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -221,7 +222,7 @@
 .main__content h1 {
     font-size: 4rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #000000 0%, #00444f 100%);
+    background-image: linear-gradient(to top, #8229e7 50%, #41a898d6 50%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -232,7 +233,7 @@
 .main__content h2 {
     font-size: 4rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #000000 0%, #0c819b 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -241,7 +242,6 @@
 } 
 
  .main__content p {
-    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700; 
     color: #fff;
@@ -276,7 +276,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #000000;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -297,6 +297,27 @@
     height: 80%;
     width: 80%;
 }
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(75px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .fade-in-up {
+     font-family: 'Merriweather', serif;
+  }
+
+  
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
