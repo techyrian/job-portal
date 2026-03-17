@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background: linear-gradient(rgb(128, 255, 196), rgba(63, 5, 108, 0.847));
+    background: linear-gradient(rgb(0, 33, 80), rgb(102, 4, 4));
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@
 
 #navbar__logo {
     background-color: #000000;
-    background-image: linear-gradient(to top, #000000);
+    background-image: linear-gradient(to top, #ffffff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -88,12 +88,12 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #580369;
-    color: #757474;
+    background: rgb(102, 4, 4);
+    color: #ffffff;
 }
 
 .button:hover {
-    background: #45e6ffba;
+    background: rgb(0, 33, 80);
     transition: all 0.3s ease;
 }
 
@@ -221,8 +221,8 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #8229e7 50%, #41a898d6 50%);
+    background-color: #000000;
+    background-image: linear-gradient(to top, rgb(102, 4, 4), rgb(0, 33, 80));
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -369,279 +369,5 @@
     .main__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
-    }
-}
-
-/* Services Section CSS */
-.services {
-    background: #141414;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, 
-    #ff8177 0%, 
-    #ff867a 0%, 
-    #ff8c7f 21%, 
-    #f99185 52%, 
-    #cf556c 78%,
-    #b12a5b 100%
-);
-background-size: 100%;
-margin-bottom: 5rem;
-font-size: 2.5rem;
--webkit-background-clip: text;
--moz-background-clip: text;
--webkit-text-fill-color: transparent;
--moz-text-fill-color: transparent;
-}
-
-.services__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom, 
-    rgba(0, 0, 0, 0) 0%, 
-    rgba(17, 17, 17, 0.6) 100%
-    ), 
-    url('images/chessode.jpg');
-    background-size: cover;
-    position: relative;
-    color: #ffffff;
-}
-
-#job-card {
-    background-image: linear-gradient(
-        to bottom, 
-    rgba(0, 0, 0, 0) 0%, 
-    rgba(17, 17, 17, 0.6) 100%
-    ), 
-    url('images/thumbups.jpg')
-}
-
-#job-class {
-    background-image: linear-gradient(
-        to bottom, 
-    rgba(0, 0, 0, 0) 0%, 
-    rgba(17, 17, 17, 0.6) 100%
-    ), 
-    url('images/techcode.jpg')
-}
-
-.services__card:nth-child(2) {
-    background-image: linear-gradient(
-        to bottom, 
-    rgba(255, 252, 252, 0) 0%, 
-    rgba(17, 17, 17, 0.6) 100%
-    ), 
-    url('images/pexelscode.jpg');
-}
-
-.services h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.services__card p:first-of-type {
-    position: absolute;
-    top: 385px;
-    left: 30px;
-}
-
-.services__card p:nth-of-type(2) {
-    position: relative;
-    top: 435px;
-    left: 30px;
-    width: 90%;
-}
-
-.services__card button {
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    position: absolute;
-    top: 480px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.services__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 960px) {
-    .services {
-        height: 1600px;
-    }
-
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services {
-        height: 1400px;
-    }
-
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services_card {
-        width: 300px;
-    }
-}
-
-/* Footer CSS */
-.footer__container {
-    background-color: #141414;
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#footer__logo {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-.footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer__link-wrapper {
-    display: flex;
-}
-
-.footer__link--items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-}
-
-.footer__link--items h2 {
-    margin-bottom: 16px;
-}
-
-.footer__link--items > h2 {
-    color: #fff;
-}
-
-.footer__link--items a {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-}
-
-.footer__link--items a:hover {
-    color: #e9e9e9;
-    transition: 0.3s ease-out;
-}
-
-/* Social Icons */
-.social__icon--link {
-    color: #fff;
-    font-size: 24px;
-}
-
-.social__media {
-    max-width: 1000px;
-    width: 100%;
-}
-
-.social__media--wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto 0 auto;
-}
-
-.social__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-}
-
-.social__logo {
-    color: #fff;
-    justify-self: flex-start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.website__rights {
-    color: #fff;
-}
-
-@media screen and (max-width: 820px) {
-    .footer__links {
-        padding-top: 2rem;
-    }
-
-    #footer__logo {
-      margin-bottom: 2rem;
-    }
-
-    .website__rights {
-        margin-bottom: 2rem;
-    }
-
-    .footer__link--wrapper {
-        flex-direction: column;
-    }
-
-    .social__media--wrap {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer__link-wrapper {
-        margin: 0;
-        padding: 10px;
-        width: 100%;
-        flex-direction: column;
     }
 }
